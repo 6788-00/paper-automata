@@ -1,6 +1,5 @@
-# Paper Automata
-
 ![](https://i.imgur.com/1VZl4HY.png)
+
 ![](https://staticdelivery.nexusmods.com/mods/110/images/64439/64439-1564751582-263375090.png)
 
 ## Installation
