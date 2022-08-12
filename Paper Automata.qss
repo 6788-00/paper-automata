@@ -1,3 +1,4 @@
+/* Version 3.2 by 6788 */
 QWidget {
   background: transparent;
   font-size: 13px;
@@ -221,12 +222,18 @@ QGroupBox {
 
 QProgressBar {
   background: #CDC8B0;
-  color: #CDC8B0;
+  color: #4E4B42;
   text-align: center;
-  border: 2px solid #CDC8B0;
+  padding: 2px;
+  border: 2px solid #4E4B42;
   margin: 0 10px; }
   QProgressBar::chunk {
-    background: #4E4B42; }
+    background: #CD664D; }
+  QProgressBar[downloadView=standard] {
+    background: transparent;
+    margin: 11px 0; }
+  QProgressBar[downloadView=compact] {
+    background: transparent; }
 
 QTabWidget::pane {
   bottom: 4px;
@@ -316,6 +323,10 @@ QueryOverwriteDialog QPushButton {
 #actionInstallMod {
   icon: url("./Paper/Automata/Toolbar/archives.svg");
   qproperty-icon: url("./Paper/Automata/Toolbar/archives.svg"); }
+
+#actionModPage {
+  icon: url("./Paper/Automata/Toolbar/globe.svg");
+  qproperty-icon: url("./Paper/Automata/Toolbar/globe.svg"); }
 
 #actionNexus {
   icon: url("./Paper/Automata/Toolbar/nexus.svg");
@@ -417,7 +428,6 @@ QueryOverwriteDialog QPushButton {
   icon: url("./Paper/Automata/run.svg");
   qproperty-icon: url("./Paper/Automata/run.svg");
   icon-size: 30px;
-  qproperty-iconsize: 30px;
   padding: 6px; }
   #startButton:hover {
     background: #B4AF9A;
@@ -586,16 +596,6 @@ DownloadListWidget[downloadView=compact]::item {
   min-height: 24px;
   margin: -4px 0; }
 
-QProgressBar[downloadView=standard] {
-  background: transparent;
-  margin: 11px 0; }
-
-QProgressBar[downloadView=compact] {
-  background: transparent; }
-
-QProgressBar[downloadView=standard]::chunk, QProgressBar[downloadView=compact]::chunk {
-  border-right: 2px solid #CDC8B0; }
-
 QLCDNumber {
   background: #DAD4BB;
   color: #4E4B42; }
@@ -644,3 +644,7 @@ QTreeWidget#filters, #categoriesList {
 #categoriesGroup {
   padding: 23px 0 0 0;
   border: 0; }
+
+#iconLabel {
+  image: url("./Paper/Automata/logo.svg");
+  qproperty-pixmap: none; }
